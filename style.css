@@ -2,3 +2,10 @@ ul span li {
     display: inline-block;
     margin-left: 15%;
 }
+.banner{
+    width: 100%;
+    height: 250px;
+};
+.bg-per{
+    background-color: aquamarine;
+}
