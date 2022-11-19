@@ -12,17 +12,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="/script.js"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="banner">
         <img src="https://universidadean.edu.co/sites/default/files/noticias/internas/Día-del-administrador-de-empresas-banner.jpg" alt="Banner empresa" class="banner">
-        <!-- Banner -->
     </div>
 <div>
     <nav class="navbar navbar-expand-lg bg-light fixed-top" id="nav">
         <div class="container-fluid" >
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/index.html">
                 <img src="/assets/calculator-solid-24.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                 Contalalala
               </a>
@@ -32,11 +33,18 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contenidos en esta p&aacute;gina
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#que">&#191;Quienes somos?</a></li>
+                  <li><a class="dropdown-item" href="#serv">&#191;Qu&eacute; servicios prestamos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#equi">Equipos de trabajo</a></li>
+                </ul>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Anexos
@@ -53,6 +61,8 @@
               <div>
                 <input type="checkbox" class="checkbox" id="toggle">
                <label for="toggle" class="label">
+                <img src="/assets/sun-regular-24.png" class="imgball">
+                <img src="/assets/moon-solid-24.png" class="imgball">
                 <div class='ball'>
               </label>
               <script src="/script.js"></script>
@@ -62,31 +72,13 @@
 </div>
 </nav>
 </div>
-<!-- <div>
-    <hr>
-    <h2 id="ane">Anexos</h2>
-    <ul>
-        <li><a href="inversor.html" target="_blank">Invierte en nostros</a></li>
-        <li><a href="emplear.html" target="_blank">Trabaja con nosotros</a></li>
-        <li><a href="/Anexos/politics.doc">Nuestras políticas</a></li>
-        <li><a href="/Anexos/Terms.doc">Términos y condiciones</a></li>
-    </ul>
-    <hr>
-</div> -->
-<!-- <a href="#que">¿Qué es?</a>
-    <a href="#serv">Servicios</a>
-    <a href="#equi">Equipo de trabajo</a>
-    <a href="#cont">Contáctanos</a>
-    <a href="#ane">Anexos</a> -->
-<div>
-</div>
 <div class="all">
-  <br>
-  <h2 id="que">¿Qué es?:</h2>
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam harum aliquid provident nobis ex similique, quaerat fugiat, eaque, doloremque ullam totam necessitatibus in voluptas est rem quasi possimus vitae labore?</p>
-    
+  <br id="que">
+  <h2>¿Quienes somos?:</h2>
+  <p>Somos Contalalala S.A.S, una empresa orientada al desarrollo y mantenimiento de aplicaciones de uso contable. Estamos comprometidos con la exclusividad y la calidad de nuestro servicio, generando espacios en los que las empresas puedan sentirse seguras sobre el manejo de sus datos contables, facilitando el proceso organizacional contable.</p>
     <div>
-      <h2 id="serv">Servicios</h2>
+      <br id="serv">
+      <h2>Servicios</h2>
       <div>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
           <div class="carousel-indicators">
@@ -96,24 +88,31 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="/assets/cuentahuevos.png" class="d-block w-100 carouselImg" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder <a href="https://www.amazon.com/Amazon-Calculadora-escritorio-dígitos-paquete/dp/B08DRS8MNF/ref=sr_1_1_sspa?keywords=calculators&qid=1668808379&sprefix=Calculato%2Caps%2C365&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank">content</a> for the first slide.</p>
+              <h5 style="text-align:center">Plan "Huevo"</h5>
+              <a href="https://www.amazon.com/Amazon-Calculadora-escritorio-dígitos-paquete/dp/B08DRS8MNF/ref=sr_1_1_sspa?keywords=calculators&qid=1668808379&sprefix=Calculato%2Caps%2C365&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank">
+                <img src="/assets/cuentahuevos.png" class="d-block w-100 carouselImg" alt="...">
+              </a>
+              <div class="carousel-caption d-none d-md-block bg-text">
+                <h5>Plan "huevo"</h5>
+                <p>El plan huevo est&aacute; dise&nacute;ado para aquellos peque&nacute;os comerciantes y empresas que cumplen con una facturaci&oacute;n menor a 40'000.000 de pesos mensuales. <a href="https://www.amazon.com/Amazon-Calculadora-escritorio-dígitos-paquete/dp/B08DRS8MNF/ref=sr_1_1_sspa?keywords=calculators&qid=1668808379&sprefix=Calculato%2Caps%2C365&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank">Haz click aqu&iacute; para ver los detalles de este plan</a>.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="/assets/basic.png" class="d-block w-100 carouselImg" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder <a href="https://www.amazon.com/-/es/Calculadora-científica-Instruments-TI-30-2-Linea/dp/B00000JBNX/ref=sr_1_3?keywords=calculators&qid=1668808379&sprefix=Calculato%2Caps%2C365&sr=8-3" target="_blank">content</a> for the second slide.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/Scientific.png" class="d-block w-100 carouselImg" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>Some representative placeholder <a href="https://www.amazon.com/-/es/TI-Nspire-CX-Funda-protectora/dp/B0714JB5XB/ref=sr_1_8?crid=1RV7PCPNR55OZ&keywords=calculators+texas+instruments&qid=1668808552&sprefix=calculators%2Caps%2C766&sr=8-8" target="_blank">content</a> for the third slide.</p>
+              <h5 style="text-align:center">Plan "B&aacute;sico"</h5>
+                <a href="https://www.amazon.com/-/es/Calculadora-científica-Instruments-TI-30-2-Linea/dp/B00000JBNX/ref=sr_1_3?keywords=calculators&qid=1668808379&sprefix=Calculato%2Caps%2C365&sr=8-3" target="_blank">
+                  <img src="/assets/basic.png" class="d-block w-100 carouselImg" alt="...">
+                </a>
+                <div class="carousel-caption d-none d-md-block bg-text">
+                  <h5>Plan "b&aacute;sico"</h5>
+                  <p>El plan b&aacute;sico est&aacute; orientado a medianas empresas cuya facturaci&oacute; no sea menor a 100'000.000 de pesos mensuales. Entre sus beneficios encontramos la posibilidad de hacer asientos contables de gran dificultad. <a href="https://www.amazon.com/-/es/Calculadora-científica-Instruments-TI-30-2-Linea/dp/B00000JBNX/ref=sr_1_3?keywords=calculators&qid=1668808379&sprefix=Calculato%2Caps%2C365&sr=8-3" target="_blank">Haz click aqu&iacute; para ver los detalles de este plan</a>.</p>
+                </div>
+              </div>
+                  <div class="carousel-item ">
+                    <h5 style="text-align:center">Plan "Cient&iacute;fico"</h5>
+                    <a href="https://www.amazon.com/-/es/TI-Nspire-CX-Funda-protectora/dp/B0714JB5XB/ref=sr_1_8?crid=1RV7PCPNR55OZ&keywords=calculators+texas+instruments&qid=1668808552&sprefix=calculators%2Caps%2C766&sr=8-8" target="_blank" rel="noopener noreferrer"><img src="/assets/Scientific.png" class="d-block w-100 carouselImg" alt="..."></a>
+                    <div class="carousel-caption d-none d-md-block bg-text">
+                      <h5>Plan "cient&iacute;fico"</h5>
+                      <p>El plan cient&iacute;fico est&aacute; orientado a grandes empresas internacionalizadas cuya facturaci&oacute;n no sea menor a 1.000'000.0000 de pesos mensuales. Posee todos lo beneficios ya ofrecidos, adem&aacute;s de la posibilidad de tener un asesor disponible las 24 horas. <a href="https://www.amazon.com/-/es/TI-Nspire-CX-Funda-protectora/dp/B0714JB5XB/ref=sr_1_8?crid=1RV7PCPNR55OZ&keywords=calculators+texas+instruments&qid=1668808552&sprefix=calculators%2Caps%2C766&sr=8-8" target="_blank">Haz click aqu&iacute; para ver los detalles de este plan</a>.</p>
                     </div>
                   </div>
                 </div>
@@ -127,15 +126,14 @@
                 </button>
               </div>
         </div>
-        <h7>¿Aún no te decides? <a href="prueba.html" target="_blank">¡Prueba esta versión preliminar de nuestra base de datos!</a></h7>
+        <hr>
+        <!-- <h7>¿Aún no te decides? <a href="prueba.html" target="_blank">¡Prueba esta versión preliminar de nuestra base de datos!</a></h7> -->
       </div>
-      
       <div>
-        <h2 id="equi">Equipo de trabajo (Estructura organizacional)</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem tempore incidunt voluptas reprehenderit debitis atque. Id, molestiae iste! Id non sit inventore excepturi iste. Nesciunt nulla alias veritatis magnam.</p>
+        <h2 id="equi">Equipo de trabajo</h2>
+        <p>En Contalalala S.A.S estamos comprometidos con la comunicaci&oacute;n rec&iacute;proca cliente-empleado, por lo que disponemos de un equipo de profesionales totalmente calificados para asesorar a los clientes y desarrollar las aplicaciones a pedido.</p>
         <div>
           <h3>Asesores</h3>
-          <!-- Product owners y una breve descripción de su persona -->
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -144,13 +142,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="/assets/asesor1.png" class="d-block w-100" alt="...">
+                <img src="/assets/asesor1.png" class="d-block w-100 carouselImg" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="/assets/asesor2.jpg" class="d-block w-100" alt="...">
+                <img src="/assets/asesor2.jpg" class="d-block w-100 carouselImg" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="/assets/asesor3.jpg" class="d-block w-100" alt="...">
+                <img src="/assets/asesor3.jpg" class="d-block w-100 carouselImg" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -164,6 +162,7 @@
               </div>
             </div>
             <div>
+              <br>
               <h3>Equipos</h3>
               <!-- Capacidades de los equipos, prosVSContras -->
               <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -171,8 +170,23 @@
                   <div class="card" id="card1">
                     <img src="/assets/group1.PNG" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title"><strong>Equipo Alpha</strong></h5>
+                      <p class="card-text">El equipo alpha es el equipo de &eacute;lite dentro de Contalalala, poseen las mejores caracter&iacute;sticas de trabajo y una gran cantidad de experiencia a sus espaldas.</p>
+                      <p><b>Caracter&iacute;sticas.</b></p>
+                      <ul>
+                        <li>
+                          Gran diversidad de habilidades.
+                        </li>
+                        <li>
+                          Comunicaci&oacute;n con el cliente excepcional.
+                        </li>
+                        <li>
+                          Trabajos a largo plazo pero de gran calidad.
+                        </li>
+                        <li>
+                          Confiabilidad en su trabajo.
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -180,8 +194,23 @@
                   <div class="card" id="card2">
                     <img src="/assets/group2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title"><strong>Equipo Beta</strong></h5>
+                      <p class="card-text">El equipo Beta est&aacute; formado por profesonales con grandes caracter&iacute;sticas como lo son el trabajo en equipo y la rapidez de desarrollo, perfecto para los trabajos a contrarreloj.</p>
+                      <p><b>Caracter&iacute;sticas.</b></p>
+                      <ul>
+                        <li>
+                          R&aacute;pida adaptaci&oacute;n a entornos de desarrollo complejos.
+                        </li>
+                        <li>
+                          Velocidad y eficiencia excepcionales.
+                        </li>
+                        <li>
+                          Habilidades de comunicaci&oacute; con el cliente regulares.
+                        </li>
+                        <li>
+                          Capacidad para realizar el trabajo en tiempos cortos y con una gran presici&oacute;n. 
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -189,8 +218,23 @@
                   <div class="card" id="card3">
                     <img src="/assets/group3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                      <h5 class="card-title"><strong>Equipo Charlie</strong></h5>
+                      <p class="card-text">El equipo Charlie est&aacute; conformado en su mayor&iacute;a por diamantes en bruto de la programaci&oacute;n de software</p>
+                      <p><b>Caracter&iacute;sticas.</b></p>
+                      <ul>
+                        <li>
+                          Poca experiencia en el campo.
+                        </li>
+                        <li>
+                          Gran adaptabilidad a m&eacute;todos innovadores.
+                        </li>
+                        <li>
+                          Comunicaci&oacute;n interna y externa excepcional.
+                        </li>
+                        <li>
+                          Disponibilidad a trabajos que requieran perspectivas abstractas.
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -199,31 +243,31 @@
     </div>
     <br>
     <div>
-        <footer class="text-center text-lg-start bg-light text-muted" id="foot">
-          <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-              <div class="me-5 d-none d-lg-block">
-                <span>Cont&aacute;ctanos:</span>
-              </div>
-              <div>
-                <a href="https://www.facebook.com" class="me-4 text-reset">
-                  <img src="/assets/facebook-logo-24.png" class="fab fa-facebook-f">
-                </a>
-                <a href="https://twitter.com/home?lang=es" class="me-4 text-reset">
-                  <img src="/assets/twitter-logo-24.png" class="fab fa-twitter">
-                </a>
-                <a href="mailto:kmilochance@gmail.com" class="me-4 text-reset">
-                  <img src="/assets/gmail-logo-24.png" class="fab fa-google">
-                </a>
-                <a href="https://www.instagram.com" class="me-4 text-reset">
-                  <img src="/assets/instagram-alt-logo-24.png" class="fab fa-instagram">
-                </a>
-                <a href="callto:3216043120" class="me-4 text-reset">
-                  <img src="/assets/phone-call-solid-24.png" class="fas fa-phone me-3">
-                </a>
-              </div>
-            </section>
-          </footer>
+    </div>
+  </div>
+  <footer class="text-center text-lg-start bg-light text-muted" id="foot">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+          <span>Cont&aacute;ctanos:</span>
         </div>
-      </div>
+        <div>
+          <a href="https://www.facebook.com" target="_blank" class="me-4 text-reset">
+            <img src="/assets/facebook-logo-24.png" class="fab fa-facebook-f">
+          </a>
+          <a href="https://twitter.com/home?lang=es" target="_blank" class="me-4 text-reset">
+            <img src="/assets/twitter-logo-24.png" class="fab fa-twitter">
+          </a>
+          <a href="mailto:kmilochance@gmail.com" target="_blank" class="me-4 text-reset">
+            <img src="/assets/gmail-logo-24.png" class="fab fa-google">
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="me-4 text-reset">
+            <img src="/assets/instagram-alt-logo-24.png" class="fab fa-instagram">
+          </a>
+          <a href="callto:3216043120" target="_blank" class="me-4 text-reset">
+            <img src="/assets/phone-call-solid-24.png" class="fas fa-phone me-3">
+          </a>
+        </div>
+      </section>
+    </footer>
       </body>
       </html>

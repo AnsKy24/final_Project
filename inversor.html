@@ -4,21 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
     <title>Inverisón</title>
 </head>
 <body>
-    <img src="https://universidadean.edu.co/sites/default/files/noticias/internas/Día-del-administrador-de-empresas-banner.jpg" alt="Banner empresa" class="banner">
-    <h1>¿Por qué invertir en nosotros?</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt at totam saepe repudiandae quas, eum magnam nam quos, ipsa aliquid asperiores molestiae ducimus eius culpa consequuntur deserunt voluptas quia eligendi!</p>
-    <!-- Redactar, importante -->
-    <br>
-    <h1>Documentos apoyo</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quisquam odit, quibusdam facilis officia libero ex tempora optio voluptatem sit, et omnis quae, ducimus dolores tempore dolore beatae! Veritatis, maiores!</p>
-    <ul>
-        <li><a href="/assets/documents/Situacion financiera contalalala.docx">Documentos contables</a></li>
-    </ul>
-    <div>
-        <a href="/index.html"><button>Volver</button></a>
+    <div id="banner">
+        <img src="https://universidadean.edu.co/sites/default/files/noticias/internas/Día-del-administrador-de-empresas-banner.jpg" alt="Banner empresa" class="banner">
     </div>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-light fixed-top" id="nav">
+            <div class="container-fluid" >
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/assets/calculator-solid-24.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Contalalala
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contenidos en esta p&aacute;gina
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#inversion">&#191;Por qu&eacute; invertir en nosotros?</a></li>
+                      <li><a class="dropdown-item" href="#documentosApoyo">Documentos de apoyo</a></li>
+                    </ul>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Anexos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" target="_blank" href="/inversor.html">Invierte en nosotros</a></li>
+                      <li><a class="dropdown-item" target="_blank" href="/emplear.html">Trabaja en nuestras instalaciones</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" target="_blank" href="">Documentos de inter&eacute;s</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div>
+                  <div>
+                    <input type="checkbox" class="checkbox" id="toggle">
+                   <label for="toggle" class="label">
+                    <img src="/assets/sun-regular-24.png" class="imgball">
+                    <img src="/assets/moon-solid-24.png" class="imgball">
+                    <div class='ball'>
+                  </label>
+                  <script src="/script.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+    </div>
+    <div>
+        <h1>¿Por qué invertir en nosotros?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt at totam saepe repudiandae quas, eum magnam nam quos, ipsa aliquid asperiores molestiae ducimus eius culpa consequuntur deserunt voluptas quia eligendi!</p>
+        <!-- Redactar, importante -->
+    </div>
+    <br>
+    <div>
+
+        <h1>Documentos apoyo</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quisquam odit, quibusdam facilis officia libero ex tempora optio voluptatem sit, et omnis quae, ducimus dolores tempore dolore beatae! Veritatis, maiores!</p>
+        <button><a href="/assets/documents/Situacion financiera contalalala.docx"></a>Descargar situacion financiera Contalalala</button>
+    </div>
+    <br>
+    <footer class="text-center text-lg-start bg-light text-muted" id="foot">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+              <span>Cont&aacute;ctanos:</span>
+            </div>
+            <div>
+              <a href="https://www.facebook.com" target="_blank" class="me-4 text-reset">
+                <img src="/assets/facebook-logo-24.png" class="fab fa-facebook-f">
+              </a>
+              <a href="https://twitter.com/home?lang=es" target="_blank" class="me-4 text-reset">
+                <img src="/assets/twitter-logo-24.png" class="fab fa-twitter">
+              </a>
+              <a href="mailto:kmilochance@gmail.com" target="_blank" class="me-4 text-reset">
+                <img src="/assets/gmail-logo-24.png" class="fab fa-google">
+              </a>
+              <a href="https://www.instagram.com" target="_blank" class="me-4 text-reset">
+                <img src="/assets/instagram-alt-logo-24.png" class="fab fa-instagram">
+              </a>
+              <a href="callto:3216043120" target="_blank" class="me-4 text-reset">
+                <img src="/assets/phone-call-solid-24.png" class="fas fa-phone me-3">
+              </a>
+            </div>
+          </section>
+        </footer>
 </body>
 </html>
