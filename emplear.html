@@ -72,11 +72,34 @@
         <h1>Ambiente</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, alias ea harum sit saepe nostrum animi dicta cupiditate! Voluptate voluptas quo consequatur quisquam alias autem, culpa quidem obcaecati aut delectus.</p>
         <div>
-            <img>
-            <img>
-            <img>
-            <img>
-            <img>
+          <table class="tCollage">
+            <tbody>
+              <td>
+                <tr>
+                  <img class="collage" src="/assets/ambiente3.jpg">
+                </tr>
+                <tr>
+                  <img class="collage" src="/assets/ambiente2.jpg">
+                </tr>
+              </td>
+              <td>
+                <tr>
+                  <img class="collage" src="/assets/ambiente4.jpg">
+                  <tr>
+                    <img class="collage" src="/assets/ambiente1.png">
+                  </tr>
+                </tr>
+              </td>
+              <td>
+                <tr>
+                  <img class="collage" src="/assets/ambiente6.jpg">
+              </tr>
+              <tr>
+                <img class="collage" src="/assets/ambiente5.jpg">
+              </tr>
+            </td>
+          </tbody>
+          </table>
         </div>
         <!-- Hacer collage de imagenes goggleables -->
     </div>
@@ -106,18 +129,57 @@
             <h2>En este domominio</h2>
             <div>
                 <form>
-                    
+                  <div><h3>Aplicaci&oacute;n oferta laboral Contalalala</h3></div>
+                  <div>
+                    <label for="name">
+                      Ingrese su nombre y apellidos:
+                      <input type="text" name="name" id="name" placeholder="Alexis Quiroz Ruiz" minlength="2">
+                    </label>
+                  </div>
+                  <div>
+                    <label for="email">
+                      Ingrese su correo electr&oacute;nico:
+                      <input type="email" name="email" id="email" placeholder="example123@gmail.com">
+                    </label>
+                  </div>
+                  <div>
+                    <label for="age">
+                      Ingrese su edad:
+                      <input type="number" name="age" id="age" placeholder="18" min="18">
+                    </label>
+                  </div>
+                  <div>
+                    <div>
+                      <label for="job"> 
+                        &#191;A qu&eacute; puesto de trabajo desea aplicar?: 
+                        <select data-placeholder="" name="job">
+                          <option value=""></option>
+                          <option>Desarrollador Front-end</option>
+                          <option>Desarrollador Back-end</option>
+                          <option>Product Owner</option>
+                          <option>Scrum Master</option>
+                        </select>
+                        &#191;Tiene una segunda opci&oacute;n?: 
+                        <select data-placeholder="" name="jobsecond">
+                          <option value=""></option>
+                          <option>Desarrollador Front-end</option>
+                          <option>Desarrollador Back-end</option>
+                          <option>Product Owner</option>
+                          <option>Scrum Master</option>
+                        </select>
+                      </label>
+                  </div>
+                  </div>
                 </form>
             </div>
         </div>
         <div>
             
-            <h2><a href="">En Google Forms</a></h2>
-            <!-- Hacer un formulario en Google Forms -->
+            <h2><a href="https://docs.google.com/forms/d/e/1FAIpQLSfRDoteS7FtVU0XJ8k_rcNaGrjKs4V0t4kLIwzmZDNP0qbZ7w/viewform?usp=sf_link" target="_blank">En Google Forms</a></h2>
         </div>
         <div>
             <h2>Modalidad presencial</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est ut ratione veritatis, dolor voluptatibus molestias hic reprehenderit. Quidem magnam, ducimus maxime ex tempore illo, corporis soluta exercitationem placeat eius nobis? <a href="/assets/documents/job_Application.docx">Descargar PDF</a>.</p>
+            <p>Para poder aplicar a una de las ofertas laborales de manera presencial se requiere que consulte su luegar de trabajo de Contalalala m&aacute;s cercano <a href="https://www.google.com/maps/@4.962428,-70.3200128,5.67z?hl=es" target="_blank">haciendo click aqu&iacute;</a>. Posteriormente debe de imprimir el archivo PDF y llevarlo a dicha oficina con los datos suministrados. <a href="/assets/documents/job_Application.pdf">Descargar PDF</a>.</p>
             <!-- Que descarguen un pdf para imprimir, hacer el pdf, recordar cambiar de .doc a .pdf -->
         </div>
     </div>

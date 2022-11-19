@@ -121,3 +121,11 @@ td{
   .butn:hover {
     background-color: rgb(13, 156, 73);
   }
+  form{
+    border: solid 2px black;
+    padding-left: 7px;
+    border-radius: 5%;
+  }
+  .collage{
+    width: 25%;
+  }
