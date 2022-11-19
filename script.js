@@ -13,4 +13,4 @@ checkbox.addEventListener('change', ()=>{
   darkModecard1.classList.toggle('dark-card')
   darkModecard2.classList.toggle('dark-card')
   darkModecard3.classList.toggle('dark-card')
-})
+});

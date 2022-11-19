@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Inverisón</title>
 </head>
 <body>
@@ -48,7 +49,7 @@
                       <li><a class="dropdown-item" target="_blank" href="/inversor.html">Invierte en nosotros</a></li>
                       <li><a class="dropdown-item" target="_blank" href="/emplear.html">Trabaja en nuestras instalaciones</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" target="_blank" href="">Documentos de inter&eacute;s</a></li>
+                      <li><a class="dropdown-item" href="/assets/documents/documents.rar">Documentos de inter&eacute;s</a></li>
                     </ul>
                 </li>
             </ul>
@@ -56,43 +57,47 @@
                   <div>
                     <input type="checkbox" class="checkbox" id="toggle">
                    <label for="toggle" class="label">
-                    <img src="/assets/sun-regular-24.png" class="imgball">
                     <img src="/assets/moon-solid-24.png" class="imgball">
+                    <img src="/assets/sun-regular-24.png" class="imgball">
                     <div class='ball'>
                   </label>
-                  <script src="/script.js"></script>
+                  <script src="/graphs.js"></script>
                 </div>
             </div>
         </div>
     </div>
     </nav>
     </div>
+<div class="all">
+    <br id="inversion">
     <div>
         <h1>¿Por qué invertir en nosotros?</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt at totam saepe repudiandae quas, eum magnam nam quos, ipsa aliquid asperiores molestiae ducimus eius culpa consequuntur deserunt voluptas quia eligendi!</p>
-        <!-- Redactar, importante -->
+        <p>En Contalalala estamos enfocados en ofrecer el mejor servicio a los consumidores de nuestros productos, por esa raz&oacute;n ofrecemos la posibilidad tanto a empresas como a personas naturales la posibilidad de invertir en las acciones de cotizaci&oacute;n de bolsa. El siguiente gr&aacute;fico representa la relaci&oacute;n que tenemos con nuestros inversores:</p>
+        <div id="chartContainer" style="height: 300px; width: 100%;" class="bg-dark"></div>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <p></p>
     </div>
-    <br>
+    <br id="documentosApoyo">
     <div>
-
         <h1>Documentos apoyo</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quisquam odit, quibusdam facilis officia libero ex tempora optio voluptatem sit, et omnis quae, ducimus dolores tempore dolore beatae! Veritatis, maiores!</p>
-        <button><a href="/assets/documents/Situacion financiera contalalala.docx"></a>Descargar situacion financiera Contalalala</button>
+        <p>En Contalalala buscamos la mayor transparencia para nuestros inversores, por lo que ofrecemos al p&uacute;blico inversor el estado de situaci&oacute;n financiera de la empresa. Para acceder a este archivo haga clicl en el bot&oacute;n que encuentra abajo</p>
+        <a href="/assets/documents/Situacion financiera contalalala.docx"><button class="butn" style="width:100%"><i class="fa fa-download"></i> Situaci&oacute;n financiera</button></a>
     </div>
     <br>
+</div>
     <footer class="text-center text-lg-start bg-light text-muted" id="foot">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <div class="me-5 d-none d-lg-block">
-              <span>Cont&aacute;ctanos:</span>
+                <span>Cont&aacute;ctanos:</span>
             </div>
             <div>
-              <a href="https://www.facebook.com" target="_blank" class="me-4 text-reset">
-                <img src="/assets/facebook-logo-24.png" class="fab fa-facebook-f">
-              </a>
+                <a href="https://www.facebook.com" target="_blank" class="me-4 text-reset">
+                    <img src="/assets/facebook-logo-24.png" class="fab fa-facebook-f">
+                </a>
               <a href="https://twitter.com/home?lang=es" target="_blank" class="me-4 text-reset">
                 <img src="/assets/twitter-logo-24.png" class="fab fa-twitter">
-              </a>
-              <a href="mailto:kmilochance@gmail.com" target="_blank" class="me-4 text-reset">
+            </a>
+            <a href="mailto:kmilochance@gmail.com" target="_blank" class="me-4 text-reset">
                 <img src="/assets/gmail-logo-24.png" class="fab fa-google">
               </a>
               <a href="https://www.instagram.com" target="_blank" class="me-4 text-reset">

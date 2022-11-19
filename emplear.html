@@ -4,17 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puestos de trabajo</title>
     <link rel="stylesheet" href="/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Puestos de trabajo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
     <div>
+        <nav class="navbar navbar-expand-lg bg-light fixed-top" id="nav">
+            <div class="container-fluid" >
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/assets/calculator-solid-24.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Contalalala
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contenidos en esta p&aacute;gina
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#inversion">&#191;Por qu&eacute; invertir en nosotros?</a></li>
+                      <li><a class="dropdown-item" href="#documentosApoyo">Documentos de apoyo</a></li>
+                    </ul>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Anexos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" target="_blank" href="/inversor.html">Invierte en nosotros</a></li>
+                      <li><a class="dropdown-item" target="_blank" href="/emplear.html">Trabaja en nuestras instalaciones</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="/assets/documents/documents.rar">Documentos de inter&eacute;s</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div>
+                  <div>
+                    <input type="checkbox" class="checkbox" id="toggle">
+                   <label for="toggle" class="label">
+                    <img src="/assets/moon-solid-24.png" class="imgball">
+                    <img src="/assets/sun-regular-24.png" class="imgball">
+                    <div class='ball'>
+                  </label>
+                  <script src="/script.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+    </div>
+    <div>
         <img src="https://universidadean.edu.co/sites/default/files/noticias/internas/Día-del-administrador-de-empresas-banner.jpg" alt="Banner empresa" class="banner">
     </div>
-
+<div class="all">
     <div>
         <h1>Ambiente</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, alias ea harum sit saepe nostrum animi dicta cupiditate! Voluptate voluptas quo consequatur quisquam alias autem, culpa quidem obcaecati aut delectus.</p>
@@ -25,26 +78,26 @@
             <img>
             <img>
         </div>
-            <!-- Hacer collage de imagenes goggleables -->
+        <!-- Hacer collage de imagenes goggleables -->
     </div>
-
+    
     <div>
         <h1>Puestos</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum natus magnam aliquam provident, ullam reprehenderit, dolorum non ab amet illo ducimus blanditiis tempora maiores quaerat neque, sit impedit! Necessitatibus, velit?</p>
         <table>
-
+            
         </table>
     </div>
-
+    
     <div>
         <h1>¿Alguna duda? ¡Contáctanos!</h1>
-            <ul>
-                <span>
-                    <li><a><img src="/assets/gmail-logo-24.png" alt="Gmail"></a></li>
-                    <li><a><img src="/assets/phone-call-solid-24.png" alt="Vía telefónica (403-401-22)(+57 3216043120)"></a></li>
-                    <!-- Los teléfonos son referenciales -->
-                </span>
-            </ul>
+        <ul>
+            <span>
+                <li><a><img src="/assets/gmail-logo-24.png" alt="Gmail"></a></li>
+                <li><a><img src="/assets/phone-call-solid-24.png" alt="Vía telefónica (403-401-22)(+57 3216043120)"></a></li>
+                <!-- Los teléfonos son referenciales -->
+            </span>
+        </ul>
     </div>
 
     <div>
@@ -58,7 +111,7 @@
             </div>
         </div>
         <div>
-
+            
             <h2><a href="">En Google Forms</a></h2>
             <!-- Hacer un formulario en Google Forms -->
         </div>
@@ -67,9 +120,7 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est ut ratione veritatis, dolor voluptatibus molestias hic reprehenderit. Quidem magnam, ducimus maxime ex tempore illo, corporis soluta exercitationem placeat eius nobis? <a href="/assets/documents/job_Application.docx">Descargar PDF</a>.</p>
             <!-- Que descarguen un pdf para imprimir, hacer el pdf, recordar cambiar de .doc a .pdf -->
         </div>
-        <div>
-            <a href="/Páginas/index.html"><button>Volver</button></a>
-        </div>
     </div>
-    </body>
-    </html>
+</div>
+</body>
+</html>
